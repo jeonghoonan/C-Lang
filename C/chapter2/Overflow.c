@@ -1,11 +1,9 @@
 /**
  * overflow 
- * 
- *  
 */
 
-#include <stdio.h> // 하나의 라이브러리.printf 를 사용할수있게
-#include <limits.h> // int max가 포함하고 있다  // 각각의 변수들 자료형의 따른 한계점 한계값을 그런 범위들을 포함하고 있는 라이브러리 
+#include <stdio.h> // 하나의 라이브러리이다 // .printf 를 사용할수있게 한다 
+#include <limits.h> // int max가 포함하고 있다  // 각각의 변수들 자료형의 따른 한계점 한계값을 그런 범위들을 포함하고 있는 라이브러리이다 
 
 int main(void) {
 
