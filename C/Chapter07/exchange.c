@@ -2,9 +2,13 @@
  * 화폐의 개수를 가장 적게 주는 방법 프로그램 
  */ 
 
-// 특정한 금액을 받아서 가장 적은 거스름 화폐의 개수를 구하는 함수입닏
+// 특정한 금액을 받아서 가장 적은 거스름 화폐의 개수를 구하는 함수입니다.
 // 50000 부터 한 이유가, 가장 적은 거스름돈이라서 가장 위에서 하고, 한국은 5만원권이 가장 크기 때문 
-int smallest(int number) {
+
+#include <stdio.h>
+
+int smallest(int number) { // 함수는 반환형이있고 함수의 이름(매개변수) 가 있다
+                                                            // 매개변수는 함수의 내부적으로 어떠한 처리를 도와주는 기본적으로 존재하는 함수이다
     int count = 0;
     while (number >= 50000) {
         number -= 50000;
@@ -38,10 +42,8 @@ int smallest(int number) {
         number -= 10;
         count++;
     }
-    return count;
+    return count; // count 가 화폐의 개수
 }
-
-#include <stdio.h>
 
 int main(void) {
 
