@@ -1,0 +1,3 @@
+C:\cProjects\C-Lang\C\CodeFiles\CodeFiles\Debug\CodeFiles.exe
+C:\cProjects\C-Lang\C\CodeFiles\CodeFiles\Debug\CodeFiles.pdb
+C:\cProjects\C-Lang\C\CodeFiles\Debug\CodeFiles.pdb

@@ -1,0 +1,14 @@
+﻿  condition.c
+C:\cProjects\C-Lang\C\CodeFiles\CodeFiles\condition.c(93,7): warning C4013: 'srand' undefined; assuming extern returning int
+C:\cProjects\C-Lang\C\CodeFiles\CodeFiles\condition.c(94,16): warning C4013: 'rand' undefined; assuming extern returning int
+  function1.c
+  loop.c
+C:\cProjects\C-Lang\C\CodeFiles\CodeFiles\loop.c(109,8): warning C4013: 'printf' undefined; assuming extern returning int
+C:\cProjects\C-Lang\C\CodeFiles\CodeFiles\loop.c(110,9): warning C4013: 'scanf_s' undefined; assuming extern returning int
+  printfscanf.c
+C:\cProjects\C-Lang\C\CodeFiles\CodeFiles\printfscanf.c(69,10): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'size_t'
+C:\cProjects\C-Lang\C\CodeFiles\CodeFiles\printfscanf.c(69,10): message : this argument is used as a buffer size
+C:\cProjects\C-Lang\C\CodeFiles\CodeFiles\printfscanf.c(85,10): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'size_t'
+C:\cProjects\C-Lang\C\CodeFiles\CodeFiles\printfscanf.c(85,10): message : this argument is used as a buffer size
+  Generating Code...
+  CodeFiles.vcxproj -> C:\cProjects\C-Lang\C\CodeFiles\x64\Debug\CodeFiles.exe
