@@ -1,7 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-int main(void)
+int main_loop(void)
 {
 	// printf("Hello World\n");
 
