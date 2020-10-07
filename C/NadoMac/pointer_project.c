@@ -1,3 +1,7 @@
+/*
+    파일이 돌아가지 않는다... 이유는 모름.. 
+*/
+
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
@@ -16,7 +20,7 @@ void initData();
 void printfFishes();
 void decreaseWater(long elapsedTime);
 
-int main(void) {
+int main_pointer_project(void) {
 
     long startTime = 0; // 게임 시작 시간
     long totalElapsedTime = 0; // 총 경과 시간
@@ -123,4 +127,3 @@ int checkFishAlive() {
         }
         return 0;
     }
-}
