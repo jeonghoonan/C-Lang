@@ -14,7 +14,7 @@ void initData();
 void printfFishes();
 void decreaseWater(long elapsedTime);
 
-int main_pointer_projets(void) {
+int main_pointer_projects(void) {
 
     long startTime = 0; // >>게임 시작시간
     long totalElapsedTime = 0; // >>총 경과시간
@@ -76,6 +76,7 @@ int main_pointer_projets(void) {
         }
 
         //모든 물고기가 죽었는지 확인
+        int checkFishAlive();
         if (checkFishAlive() == 0) {
             //물고기가 모두 죽었다.
             printf("모든 물고기가 죽었습니다...\n");

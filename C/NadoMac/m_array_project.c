@@ -1,3 +1,15 @@
+/*
+int main () 함수 위에 
+int name(); 을 넣어보세요.
+함수 원형을 미리 선언하지 않아서 나온 에러일 수 있어요.
+name 함수에서 정의한 매개변수도 똑같이 넣어야 하고요.
+int name(int ) ;  자료형만 넣어도 되고요.
+
+if (foundAllAnimals) -> 가 안됐던 이유에 대해서. 실행을 시키기 위해서는 선언을 해줘야 했다. 
+
+돌아가기는 하지만, 어쩌다 보니 순서가 랜덤이다... 
+*/
+
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
@@ -70,6 +82,7 @@ int main(void) {
             }  
 
             // 모든 동물을 찾았는지 여부, 1: 참, 0 : 거짓
+            int foundAllAnimals();
             if (foundAllAnimals() == 1) {
                 printf("\n\n 축하합니다 모든 동물을 다 찾았네요 \n");
                 printf("지금까지 총 %d 번 실수하였습니다\n", failCount);
@@ -176,9 +189,10 @@ void printQuestion() {
             } 
             // 아직 뒤집지 못했으면 (정답을 못맞쳤으면) 뒷면 -> 위치르 나타내는 숫자 
             else {
-                printf("%8d", seq);
+                printf("%8d", seq++);
             }
         }
+        printf("\n");
     }
 }
 
