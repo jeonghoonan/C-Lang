@@ -32,7 +32,7 @@ int conv_pos_y(int y);
 void printAnimals();
 void printQuestion();
 
-int main(void) {
+int main_m_array_projects(void) {
     srand(time(NULL));
 
     initAnimalArray();
@@ -189,8 +189,9 @@ void printQuestion() {
             } 
             // 아직 뒤집지 못했으면 (정답을 못맞쳤으면) 뒷면 -> 위치르 나타내는 숫자 
             else {
-                printf("%8d", seq++);
+                printf("%8d", seq);
             }
+            seq++;
         }
         printf("\n");
     }
