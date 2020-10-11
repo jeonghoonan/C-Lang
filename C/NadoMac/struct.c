@@ -9,8 +9,17 @@ struct GameInfo {
     struct GameInfo *friendGame; // 연관 업체 게임
 };
 
+typedef struct { // 이렇게도 사용가능하다. 이렇게 하면은 밑에 GAME_INFO 라고 읽어버리기때문
+    char *name;
+    int year;
+    int price;
+    char *company;
+    
+    struct GameInfo *friendGame; // 연관 업체 게임
+} GAME_INFO; // <- struct GameInformation 을 GAME_INFO 로 치환한다 
 
-int main(void) {
+
+int main_struct(void) {
     // [게임 출시]
     // 이름 : 나도게임
     // 발매년도 : 2017 년
@@ -84,14 +93,28 @@ int main(void) {
     printf(" 가격  : %d\n", gameInfo1.friendGame->price);
     printf(" 제작사  : %s\n", gameInfo1.friendGame->company);
 
-    // typedef
+    // typedef 
+        // struct gameInfo 를 길게 사용하기 귀찮으니깐 이렇게 사용 가능 
     // 자료형에 별명 지정
     int i = 1;
     typedef int 정수; // 이렇게 사용하면 어때부터는 int 는 정수라고 사용가능하다
     typedef float 실수;
     정수 정수변수 = 3; // 오류가 안생긴다. // int i = 3; 이랑 같다 
     실수 실수변수 = 3.23f; //float f = 3.23f;
-    printf("정수변수 : %d, 실수변수 %.2f\n\n", 정수변수, 실수변수);
+    printf("\n\n정수변수 : %d, 실수변수 : %.2f\n\n", 정수변수, 실수변수);
+
+    typedef struct GameInfo 게임정보; // struct GameInfo 를 게임정보 라고 별명을 달아줘 
+    게임정보 game1;
+    game1.name = "한글 게임";
+    game1.year = 2015;
+
+    GAME_INFO game2;
+    game2.name = "한글 게임2";
+    game2.year = 2014;
+
+    // struct GameInformation game3; // 이렇게 길게 풀어 쓸수도 있다 
+    // game3.name = "한글 게임3";
+    
 
     return 0;
 }
